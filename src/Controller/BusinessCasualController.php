@@ -12,7 +12,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class BusinessCasualController extends Controller
 {
     /**
-     * @Route("/business-casual", name="business-casual_home")
+     * @Route("/business-casual/", name="business-casual_home")
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function indexAction()
