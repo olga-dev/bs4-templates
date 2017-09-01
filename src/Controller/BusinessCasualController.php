@@ -17,7 +17,7 @@ class BusinessCasualController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('business-casual/index.html.twig');
+        return $this->render('business-casual/home/index.html.twig');
     }
 
     /**
@@ -26,7 +26,7 @@ class BusinessCasualController extends Controller
      */
     public function aboutAction()
     {
-        return $this->render('business-casual/about.html.twig');
+        return $this->render('business-casual/about/index.html.twig');
     }
 
     /**
@@ -35,7 +35,7 @@ class BusinessCasualController extends Controller
      */
     public function blogAction()
     {
-        return $this->render('business-casual/blog.html.twig');
+        return $this->render('business-casual/blog/index.html.twig');
     }
 
     /**
@@ -44,6 +44,6 @@ class BusinessCasualController extends Controller
      */
     public function contactAction()
     {
-        return $this->render('business-casual/contact.html.twig');
+        return $this->render('business-casual/contact/index.html.twig');
     }
 }
