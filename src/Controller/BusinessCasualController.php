@@ -37,4 +37,13 @@ class BusinessCasualController extends Controller
     {
         return $this->render('business-casual/blog.html.twig');
     }
+
+    /**
+     * @Route("/business-casual/contact", name="business-casual_contact")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function contactAction()
+    {
+        return $this->render('business-casual/contact.html.twig');
+    }
 }
