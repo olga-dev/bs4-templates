@@ -17,7 +17,7 @@ class OnePageWonderController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('one-page-wonder/index.html.twig');
+        return $this->render('one-page-wonder/home/index.html.twig');
     }
 
     /**
@@ -26,7 +26,7 @@ class OnePageWonderController extends Controller
      */
     public function aboutAction()
     {
-        return $this->render('one-page-wonder/about.html.twig');
+        return $this->render('one-page-wonder/about/index.html.twig');
     }
 
     /**
@@ -35,7 +35,7 @@ class OnePageWonderController extends Controller
      */
     public function serviceAction()
     {
-        return $this->render('one-page-wonder/service.html.twig');
+        return $this->render('one-page-wonder/service/index.html.twig');
     }
 
     /**
@@ -44,6 +44,6 @@ class OnePageWonderController extends Controller
      */
     public function contactAction()
     {
-        return $this->render('one-page-wonder/contact.html.twig');
+        return $this->render('one-page-wonder/contact/index.html.twig');
     }
 }
