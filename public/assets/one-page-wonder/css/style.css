@@ -27,3 +27,7 @@ header.masthead > .overlay {
         padding: 10rem 0;
     }
 }
+
+.page-header {
+    padding: 200px 100px;
+}
