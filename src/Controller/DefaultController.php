@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Service\Menu;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
@@ -13,10 +14,11 @@ class DefaultController extends Controller
 {
     /**
      * @Route("/", name="index")
+     * @param Menu $menu
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function indexAction()
+    public function indexAction(Menu $menu)
     {
-        return $this->render('default/index.html.twig');
+        return $this->render('default/index.html.twig', ['menu' => $menu]);
     }
 }
