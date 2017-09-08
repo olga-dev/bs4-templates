@@ -5,15 +5,27 @@
 {% endblock %}
 
 {% block body %}
-{#
-
-Use it for creating the dynamic menu
-
-{% for item in menu.getItems %}
-    {{ item.name }}
-    {{ item.image }}
-    {{ item.route }}
-{% endfor %}
-
-#}
+    <div class="container">
+        <div class="row">
+            {% for item in menu.getItems %}
+                {% set image =  'assets/default/images/no-screenshot.png' %}
+                {% if file_exists(item.image) %}
+                    {% set image = item.image %}
+                {% endif %}
+                <div class="col-lg-4 col-md-6 sb-preview text-center">
+                    <div class="card h-100">
+                        <a class="sb-preview-img" href="{{ path(item.route) }}" target="_blank">
+                            <img class="card-img-top"
+                                 src="{{ asset(image) }}" alt="img"></a>
+                        <div class="card-body">
+                            <h4 class="card-tittle">{{ item.name|capitalize }}</h4>
+                        </div>
+                        <div class="card-footer">
+                            <a href="{{ path(item.route) }}" target="_blank" class="btn btn-secondary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}
