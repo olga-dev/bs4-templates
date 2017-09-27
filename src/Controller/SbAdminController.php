@@ -33,4 +33,13 @@ class SbAdminController extends Controller
     {
         return $this->render('sb-admin/tables.html.twig');
     }
+
+    /**
+     * @Route("/sb-admin/login", name="sb-admin_login")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function loginAction()
+    {
+        return $this->render('sb-admin/login.html.twig');
+    }
 }
