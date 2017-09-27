@@ -15,4 +15,13 @@ class SbAdminController extends Controller
     {
         return $this->render('sb-admin/index.html.twig');
     }
+
+    /**
+     * @Route("/sb-admin/morris", name="sb-admin-morris_home")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function morrisAction()
+    {
+        return $this->render('sb-admin/morris.html.twig');
+    }
 }
