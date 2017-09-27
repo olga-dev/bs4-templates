@@ -17,11 +17,20 @@ class SbAdminController extends Controller
     }
 
     /**
-     * @Route("/sb-admin/morris", name="sb-admin-morris_home")
+     * @Route("/sb-admin/morris", name="sb-admin_morris")
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function morrisAction()
     {
         return $this->render('sb-admin/morris.html.twig');
+    }
+
+    /**
+     * @Route("/sb-admin/tables", name="sb-admin_tables")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function tablesAction()
+    {
+        return $this->render('sb-admin/tables.html.twig');
     }
 }
