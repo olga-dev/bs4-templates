@@ -42,4 +42,58 @@ class SbAdminController extends Controller
     {
         return $this->render('sb-admin/login/index.html.twig');
     }
+
+    /**
+     * @Route("/sb-admin/blank", name="sb-admin_blank")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function blankAction()
+    {
+        return $this->render('sb-admin/blank.html.twig');
+    }
+
+    /**
+     * @Route("/sb-admin/grid", name="sb-admin_grid")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function gridAction()
+    {
+        return $this->render('sb-admin/grid.html.twig');
+    }
+
+    /**
+     * @Route("/sb-admin/icons", name="sb-admin_icons")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function iconsAction()
+    {
+        return $this->render('sb-admin/icons.html.twig');
+    }
+
+    /**
+     * @Route("/sb-admin/typography", name="sb-admin_typography")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function typographyAction()
+    {
+        return $this->render('sb-admin/typography.html.twig');
+    }
+
+    /**
+     * @Route("/sb-admin/notifications", name="sb-admin_notifications")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function notificationsAction()
+    {
+        return $this->render('sb-admin/notifications.html.twig');
+    }
+
+    /**
+     * @Route("/sb-admin/buttons", name="sb-admin_buttons")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function buttonsAction()
+    {
+        return $this->render('sb-admin/buttons.html.twig');
+    }
 }
