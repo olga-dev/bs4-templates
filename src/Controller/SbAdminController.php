@@ -69,4 +69,13 @@ class SbAdminController extends Controller
     {
         return $this->render('sb-admin/icons.html.twig');
     }
+
+    /**
+     * @Route("/sb-admin/typography", name="sb-admin_typography")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function typographyAction()
+    {
+        return $this->render('sb-admin/typography.html.twig');
+    }
 }
