@@ -42,4 +42,13 @@ class SbAdminController extends Controller
     {
         return $this->render('sb-admin/login.html.twig');
     }
+
+    /**
+     * @Route("/sb-admin/blank", name="sb-admin_blank")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function blankAction()
+    {
+        return $this->render('sb-admin/blank.html.twig');
+    }
 }
