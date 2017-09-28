@@ -51,4 +51,13 @@ class SbAdminController extends Controller
     {
         return $this->render('sb-admin/blank.html.twig');
     }
+
+    /**
+     * @Route("/sb-admin/grid", name="sb-admin_grid")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function gridAction()
+    {
+        return $this->render('sb-admin/blank.html.twig');
+    }
 }
