@@ -13,7 +13,7 @@ class SbAdminController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('sb-admin/index.html.twig');
+        return $this->render('sb-admin/home/index.html.twig');
     }
 
     /**
@@ -22,7 +22,7 @@ class SbAdminController extends Controller
      */
     public function morrisAction()
     {
-        return $this->render('sb-admin/morris.html.twig');
+        return $this->render('sb-admin/morris/index.html.twig');
     }
 
     /**
@@ -31,7 +31,7 @@ class SbAdminController extends Controller
      */
     public function tablesAction()
     {
-        return $this->render('sb-admin/tables.html.twig');
+        return $this->render('sb-admin/tables/index.html.twig');
     }
 
     /**
@@ -40,6 +40,6 @@ class SbAdminController extends Controller
      */
     public function loginAction()
     {
-        return $this->render('sb-admin/login.html.twig');
+        return $this->render('sb-admin/login/index.html.twig');
     }
 }
