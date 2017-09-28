@@ -87,4 +87,13 @@ class SbAdminController extends Controller
     {
         return $this->render('sb-admin/notifications.html.twig');
     }
+
+    /**
+     * @Route("/sb-admin/buttons", name="sb-admin_buttons")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function buttonsAction()
+    {
+        return $this->render('sb-admin/buttons.html.twig');
+    }
 }
