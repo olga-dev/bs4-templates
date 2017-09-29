@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}{% endblock %}
+
+{% block body %}
+    {% include 'sb-admin/header.html.twig' %}
+    {% include 'sb-admin/nav-bar-right.html.twig' %}
+
+    {% block content %}{% endblock %}
+
+{% endblock %}
+
+{% block javascripts %}{% endblock %}
