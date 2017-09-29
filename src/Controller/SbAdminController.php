@@ -105,4 +105,13 @@ class SbAdminController extends Controller
     {
         return $this->render('sb-admin/panel-wells.html.twig');
     }
+
+    /**
+     * @Route("/sb-admin/forms", name="sb-admin_forms")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function formsAction()
+    {
+        return $this->render('sb-admin/forms.html.twig');
+    }
 }
