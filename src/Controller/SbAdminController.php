@@ -49,7 +49,7 @@ class SbAdminController extends Controller
      */
     public function blankAction()
     {
-        return $this->render('sb-admin/blank.html.twig');
+        return $this->render('sb-admin/blank-page/index.html.twig');
     }
 
     /**
@@ -58,7 +58,7 @@ class SbAdminController extends Controller
      */
     public function gridAction()
     {
-        return $this->render('sb-admin/grid.html.twig');
+        return $this->render('sb-admin/grid-system/index.html.twig');
     }
 
     /**
@@ -67,7 +67,7 @@ class SbAdminController extends Controller
      */
     public function iconsAction()
     {
-        return $this->render('sb-admin/icons.html.twig');
+        return $this->render('sb-admin/icons/index.html.twig');
     }
 
     /**
@@ -76,7 +76,7 @@ class SbAdminController extends Controller
      */
     public function typographyAction()
     {
-        return $this->render('sb-admin/typography.html.twig');
+        return $this->render('sb-admin/typography/index.html.twig');
     }
 
     /**
@@ -85,7 +85,7 @@ class SbAdminController extends Controller
      */
     public function notificationsAction()
     {
-        return $this->render('sb-admin/notifications.html.twig');
+        return $this->render('sb-admin/notifications/index.html.twig');
     }
 
     /**
@@ -94,7 +94,7 @@ class SbAdminController extends Controller
      */
     public function buttonsAction()
     {
-        return $this->render('sb-admin/buttons.html.twig');
+        return $this->render('sb-admin/buttons/index.html.twig');
     }
 
     /**
@@ -103,7 +103,7 @@ class SbAdminController extends Controller
      */
     public function panelAndWellsAction()
     {
-        return $this->render('sb-admin/panel-wells.html.twig');
+        return $this->render('sb-admin/panels-and-wells/index.html.twig');
     }
 
     /**
@@ -112,7 +112,7 @@ class SbAdminController extends Controller
      */
     public function formsAction()
     {
-        return $this->render('sb-admin/forms.html.twig');
+        return $this->render('sb-admin/forms/index.html.twig');
     }
 
     /**
@@ -121,6 +121,6 @@ class SbAdminController extends Controller
      */
     public function flotAction()
     {
-        return $this->render('sb-admin/flot.html.twig');
+        return $this->render('sb-admin/flot/index.html.twig');
     }
 }
