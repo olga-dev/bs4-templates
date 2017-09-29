@@ -114,4 +114,13 @@ class SbAdminController extends Controller
     {
         return $this->render('sb-admin/forms.html.twig');
     }
+
+    /**
+     * @Route("/sb-admin/flot", name="sb-admin_flot")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function flotAction()
+    {
+        return $this->render('sb-admin/flot.html.twig');
+    }
 }
