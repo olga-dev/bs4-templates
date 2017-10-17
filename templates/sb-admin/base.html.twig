@@ -1,13 +1,18 @@
 {% extends 'base.html.twig' %}
 
-{% block stylesheets %}{% endblock %}
+{% block stylesheets %}
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('assets/sb-admin/css/style.css') }}"/>
+{% endblock %}
 
 {% block body %}
-    {% include 'sb-admin/header.html.twig' %}
-    {% include 'sb-admin/nav-bar-right.html.twig' %}
+    <div id="wrapper">
+        {% include 'sb-admin/header.html.twig' %}
+        {% include 'sb-admin/nav-bar-right.html.twig' %}
 
-    {% block content %}{% endblock %}
-
+        {% block content %}{% endblock %}
+    </div>
 {% endblock %}
 
 {% block javascripts %}{% endblock %}
